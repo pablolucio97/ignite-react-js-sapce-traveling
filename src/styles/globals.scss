@@ -4,4 +4,28 @@
   padding: 0;
 }
 
-// TODO
+:root {
+  --black: #1a1d23;
+  --gray1: #828282;
+  --gray2: #4f4f4f;
+  --white: #f8f8f8;
+  --primary: #ff57b2;
+}
+
+body {
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}

@@ -1,1 +1,41 @@
-// TODO
+.container {
+  display: block;
+  margin: 4rem auto;
+  width: 720px;
+
+  img{
+    margin-bottom: 3.2rem;
+  }
+
+  h1{
+    margin: .8rem auto;
+    font-weight: bold;
+  }
+
+  h3{
+    font-weight: 600;
+    color: var(--gray1);
+  }
+
+  button{
+    color: var(--primary);
+    background: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    margin-top: 4rem;
+  }
+
+}
+
+.dateContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin: .8rem auto;
+  color: var(--gray2);
+  font-size: .92rem;
+
+  span{
+    margin-left: 2rem;
+  }
+}
