@@ -3,6 +3,7 @@
   flex-direction: column;
   margin: 4rem auto;
   width: 100vw;
+  min-width: 900px;
   align-items: center;
 
 
@@ -53,5 +54,32 @@
     margin-right: 2rem;
     color: var(--gray1)
   }
+}
+
+.postsPagination{
+  width: 720px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 3.2rem;
+  margin: 3rem 0;
+  padding: .8rem;
+
+  p{
+    color: var(--gray1);
+    margin-bottom: .88rem;
+  }
+
+  a{
+    color: var(--primary)
+  }
 
 }
+
+.heading{
+  width: 900px;
+  margin: 0 auto;
+  padding: .4rem;
+}
+
