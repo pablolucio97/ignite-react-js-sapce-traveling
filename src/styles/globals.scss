@@ -16,6 +16,7 @@ body {
   background: var(--black);
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 button {
@@ -29,3 +30,5 @@ a {
   text-decoration: none;
   color: var(--white);
 }
+
+
