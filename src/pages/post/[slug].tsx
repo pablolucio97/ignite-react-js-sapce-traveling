@@ -86,8 +86,8 @@ export default function Post({ post, preview, prevPost, nextPost }: PostProps) {
           </div>
           <div className={styles.lastEditContainer}>
             <span>
-              Editado em {
-                format(parseISO(post.last_publication_date), 'dd MMM yyyy', { locale: ptBR })
+              {
+                format(parseISO(post.last_publication_date), "'* Editado em 'dd MMM yyyy', às 'hh:mm", { locale: ptBR })
               }
             </span>
           </div>
