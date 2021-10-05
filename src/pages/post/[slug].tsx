@@ -14,6 +14,7 @@ import UtterancComment from '../../components/UtterancComment'
 
 interface Post {
   first_publication_date: string | null;
+  last_publication_date: string | null;
   data: {
     title: string;
     banner: {
@@ -83,6 +84,13 @@ export default function Post({ post, preview, prevPost, nextPost }: PostProps) {
             <span><FiUser style={{ marginRight: 8 }} />{post.data.author}</span>
             <span><FiClock style={{ marginRight: 8 }} />{readingTime}</span>
           </div>
+          <div className={styles.lastEditContainer}>
+            <span>
+              Editado em {
+                format(parseISO(post.last_publication_date), 'dd MMM yyyy', { locale: ptBR })
+              }
+            </span>
+          </div>
           <div key={heading} className={styles.heading}>
             <h2>{heading}</h2>
             <div dangerouslySetInnerHTML={{ __html: RichText.asHtml(body) }} />
@@ -114,7 +122,7 @@ export default function Post({ post, preview, prevPost, nextPost }: PostProps) {
           </div>
         </div>
       </div>
-              <UtterancComment/>
+      <UtterancComment />
     </div>
   )
 }

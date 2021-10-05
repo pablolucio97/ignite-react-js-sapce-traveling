@@ -22,8 +22,6 @@
     width: 100%;
     margin: 0;
   }
-
-
 }
 
 .postContent{
@@ -83,3 +81,13 @@
   padding: .4rem;
 }
 
+
+.lastEditContainer{
+  display: flex;
+  justify-content: flex-start;
+  span{
+    color: var(--gray1);
+    margin: -2rem 1.2rem;
+    font-size: .92rem;
+  }
+}
